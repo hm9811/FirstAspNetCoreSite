@@ -3,11 +3,25 @@
 <html>
     <head>
         <title>@ViewBag.Title</title>
+        <link rel="stylesheet" href="~/css/site.css" />
     </head>
     <body>
         <header>
             <h1>Welcome to my first Site</h1>
         </header>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">
+                Home Page
+            </a>
+            <br/>
+            <a asp-controller="Home" asp-action="About">
+                About Page
+            </a>
+            <br />
+            <a asp-controller="Home" asp-action="ThirdPage">
+                Third Page
+            </a>
+        </nav>
         <main>
             @RenderBody()
         </main>
